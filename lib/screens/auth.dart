@@ -14,7 +14,7 @@ class _AuthScreenState extends State<AuthScreen> {
 
   var _isLogin = true;
   var _enteredEmail = '';
-  var _enteredPassword = ''
+  var _enteredPassword = '';
 
   void _submit() {
     final isValid = _form.currentState!.validate();
@@ -85,7 +85,7 @@ class _AuthScreenState extends State<AuthScreen> {
                               }
                               return null;
                             },
-                             onSaved: (value) {
+                            onSaved: (value) {
                               _enteredPassword = value!;
                             },
                           ),
